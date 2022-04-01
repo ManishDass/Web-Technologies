@@ -1,0 +1,113 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: grid;
+    border: 6px solid black;
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+    /* grid-template-rows: 200px; sets the height of first row height 200px rest remain default */
+
+    /* then comes shorthand property ex. grid-template: 200px / 1fr 3fr 1fr;*/
+    grid-template: minmax(200px, 300px) / repeat(3, minmax(200px, 1fr)); /* works same as upperone */
+
+    /* grid-template-columns: minmax(100px, 1000px); 
+    this above line means minimum it can go is 100px and maximum 1000px */
+    /* repeat(number of col/row, size of each); 
+    ex. repeat(3, 1fr); */
+
+    /* minmax(atleast pixel, cangrow if space available); 
+    ex. minmax(200px, 1fr); */
+
+    /* grid-template-columns: repeat(3, minmax(100px, 1fr));
+    *dont use fr in min section
+
+    /* link for better understaning 
+    https://alligator.io/css/css-grid-layout-minmax-function/ */
+
+    /*
+    justify-items - Aligns the content inside a grid item along the row axis
+
+    justify-content - This property aligns the grid along the row axis
+
+    justify-self - Aligns the content inside a grid item along the row axis
+    */
+
+    column-gap: 0.5rem; 
+    row-gap: 0.5rem; /* shorthand gap: 1rem; */
+
+    /* in flexbox we have content but in grid its items */
+    /* justify-items: center; */ /* x axis */
+    /* align-items: center; */ /* y axis */
+
+    /* shorthand of the above code */
+    /* place-items: center center; */ /* or place-items: center; for both x and y axis */
+
+    /* justify-content: space-around;
+    align-content: space-around;
+    place-content: space-around space-around; shorthand */
+
+    /* grid-auto-flow: column; */ /* just like flex-direction */
+    /* grid-auto-columns: 100px; */ /* default height of column */
+}
+
+.grid-item
+{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item1
+{
+    background-color: aquamarine;
+    /* grid-column-start: 1;
+    grid-column-end: 4; we can also write span 2 */
+    /* shorthand */
+    grid-column: 1 / 4;
+}
+.item2
+{
+    background-color: rebeccapurple;
+    /* grid-row-start: 2;
+    grid-row-end:  5; */
+    /* shorthand */
+    grid-row: 2 / span 3; /* need to span three rows */
+    /* if we are unsure end column/row we can mention span how many row/columns it need go */
+}
+.item3
+{
+    background-color: sandybrown;
+}
+.item4
+{
+    background-color: darkkhaki;
+}
+.item5
+{
+    background-color: darkgoldenrod;
+}
+.item6
+{
+    background-color: darkcyan;
+}
+.item7
+{
+    background-color: lightblue;
+}
+.item8
+{
+    background-color: darkred;
+}
+.item9
+{
+    background-color: palegoldenrod;
+    /* justify-self: center;
+    align-self: center; */
+    /*shorthand*/
+    place-self: center center;
+}

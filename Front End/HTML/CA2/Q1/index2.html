@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900;1000&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        main {
+            display: flex;
+            border: 3px solid orange;
+        }
+
+        .menu-Button {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 3px solid green;
+            
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .scrollingList {
+            flex-direction: column;
+            display: flex;
+            width: 50%;
+            border: 3px solid red;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        label
+        {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        select
+        {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="menu-Button">
+            <label>Select Your Highest Qualification</label><br>
+            <select id="country-state" name="Qualification">
+                <option>BA</option>
+                <option>BBA</option>
+                <option>B.COM</option>
+                <option>BCA</option>
+                <option>B.Sc</option>
+                <option>B.Tech</option>
+                <option>MA</option>
+                <option>MBA</option>
+                <option>M.Sc</option>
+                <option>MCA</option>
+                <option>M.Tech</option>
+                <option>M.phil</option>
+                <option>Ph.D</option>
+            </select>
+        </div>
+
+        <div class="scrollingList">
+            <label>Select Your Highest Qualification</label><br> <select name="Qualification" size="14" multiple>
+                <option value="AN">BA</option>
+                <option value="AP">BBA</option>
+                <option value="AR">B.COM</option>
+                <option value="AS">BCA</option>
+                <option value="AS">B.Sc</option>
+                <option value="BR">B.Tech</option>
+                <option value="CH">MA</option>
+                <option value="CT">MBA</option>
+                <option value="DN">M.Sc</option>
+                <option value="DD">MCA</option>
+                <option value="DL">M.Tech</option>
+                <option value="GA">M.phil</option>
+                <option value="GJ">Ph.D</option>
+            </select>
+        </div>
+    </main>
+</body>
+
+</html>

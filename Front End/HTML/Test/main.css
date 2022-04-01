@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+header
+{
+    color: white;
+ background-color: #108dc7;
+ grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 1;
+}
+
+footer
+{
+    color: white;
+    background-color: #384146;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+main
+{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+aside
+{
+    background-color: orangered;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.twin1
+{
+    background-color: #108dc7;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.twin2
+{
+    background-color: skyblue;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+p
+{
+    margin-top: 10px;
+    text-align: left;
+    padding: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+li
+{
+    text-align: left;
+    margin-left: 45px;
+}
+
+h3, h2
+{
+    padding: 33px;
+}
+
+.bold
+{
+    font-weight: 600;
+}
+
+h6
+{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-left: 45px;
+}
+
+
+

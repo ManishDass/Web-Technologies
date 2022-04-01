@@ -1,0 +1,27 @@
+*
+{
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;   
+}
+
+.showHideButton, .verificationButton
+{
+  background-color: darkcyan;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.myData
+{
+  border: 2px solid black;
+  margin:1rem 0;
+}
+
+.myData:focus
+{
+  border: 2px solid darkcyan;
+}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800;900&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main
+{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main h1
+{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=password], input[type=email], input[type=text], input[type=number]
+{
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    width: 20vw;
+    height: 46px;
+}
+
+label 
+{
+    font-size: 15px;
+}
+
+
+
+.link
+{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 150px;
+}
+
+/* Main */
+a
+{
+    font-family: inherit;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.navbar
+{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 10.5vh;
+   background-color: rgb(231, 211, 229);
+}
+
+input
+{
+    text-indent: 15px;
+}
+
+input, input::-webkit-input-placeholder {
+    font-size: 17px;
+    font-family: inherit;
+}
+
+
+.logo
+{
+    height: 5vh;
+}
+
+.button
+{
+    background-color: #23b354;
+    padding: 8px 30px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+    font-family: inherit;
+}
+
+footer
+{
+    font-family: inherit;
+    background-color: rgb(231, 211, 229);
+    height: 6vh;
+    width: 100vw;
+    position:fixed;
+    bottom:0;
+}
+
+h5
+{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.login
+{
+    margin-right:-350px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=submit]
+{
+
+    background-color: #23b354;
+    border-radius: 50px;
+    border: 1px solid grey;
+    width: 20vw;
+    height: 46px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: inherit;
+
+}
+
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #8a0000;
+    border-radius: 50px;
+    background-color: #e44e4e;
+    opacity: 0;
+    height: 6vh;
+    padding-top: 12px;
+  }

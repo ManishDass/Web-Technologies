@@ -1,0 +1,123 @@
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+ section h1
+{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label 
+{
+    font-size: 15px;
+}
+
+main button
+{
+    background-color: #23b354;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 20vw;
+    height: 46px;
+    margin: 20px 0 100px 0;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: inherit;
+}
+
+
+p
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+p:hover
+{
+    color: black;
+    font-weight: 600;
+    background-color: rgb(231, 211, 229);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+section > input[type=text], input[type=number], .selectBox
+{
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    width: 20vw;
+    height: 46px;
+}
+
+.selectBox
+{
+    padding-left: 20px;
+    font-family: inherit;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.left1
+{
+    margin-left: -130px;
+    margin-bottom: 20px;
+}
+
+.left2
+{
+    margin-left: -73px;
+    margin-bottom: 10px;
+}
+
+.option1
+{
+    margin-left: -80px;
+    margin-bottom: 10px;
+}
+
+.option2
+{
+    margin-left: -131.7px;
+    margin-bottom: 10px;
+}
+
+.option3
+{
+    margin-left: -131.5px;
+    margin-bottom: 10px;
+}
+
+.navbar-main
+{
+    background-color: rgb(231, 211, 229);
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 152px;
+    gap: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    height: 8vh;
+    align-items: center;
+    box-shadow: 0 6px 10px -5px #333;
+}
+
+.navbar-main li:hover
+{
+    color:#23b354
+}
+
+.about
+{
+    margin-top: 300px;
+}

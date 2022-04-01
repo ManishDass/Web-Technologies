@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    background-color: #202224;
+}
+.navbar
+{
+  padding: 10px 10px; 
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+  align-items: center;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+.navbar a:hover
+{
+    border-bottom :3px solid rgb(31, 122, 233);
+    box-shadow: 0px 0px 100px 0px red;
+}
+
+.logo
+{
+    margin-right: auto;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.dropdown-content ul
+{
+    color: red;
+    list-style-type: none;
+}
+
+.dropdown-content li > a
+{
+    font-size: 1rem;
+    background-color: rgb(7, 126, 223);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+
+.dropdown-content
+{
+    display: none;
+   position: absolute;
+   top: 50px;
+   z-index: 1;
+}
+
+.dropdown-content li
+{
+    padding: 10px 0 10px 0;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.courses:hover
+{
+    display: none;
+}
+
+.main-container
+{
+    display: flex;
+    justify-content: center;
+} 
+
+.body-cover
+{
+    height: 40vw;   
+}
+
+.text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-left: 70px;
+}
+.heading-text
+{
+    color: white;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.heading-slogan
+{
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem; 
+
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 30px;
+    padding: 15px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width: 484px)
+{
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .navbar a
+    {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    margin: 10px;
+    }
+
+    .logo
+    {
+    display: none;
+    height: 0px;
+    margin-left: 0px;
+    }
+
+    .main-container
+    {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    } 
+
+    .body-cover
+    {
+    height: 100vw;   
+    }
+
+    .text-container
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    }
+
+    .dropdown-content
+    {
+    position: relative;
+    top: 5px;   
+    }
+
+    .dropdown-content li > a
+    {
+        font-size: 1rem;
+        background-color: coral;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .heading-text
+    {
+    color: white;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    }
+
+    .heading-slogan
+    {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem; 
+
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 30px;
+    padding: 15px;
+    width: fit-content;
+    margin-top: 20px;
+    }
+}

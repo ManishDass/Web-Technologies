@@ -1,0 +1,276 @@
+<!--Created with Hard Work By Manish Das -->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+  <title>Mobile UX</title>
+
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    article>div:nth-child(2) {
+      margin-left: 0.2rem;
+      flex: 3 1 auto;
+    }
+
+    .test {
+      box-shadow: -1px -5px 5px -3px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: -1px -5px 5px -3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: -1px -5px 5px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-section {
+      background-image: url(./images/1.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      height: 200px;
+    }
+
+    article {
+      display: block;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .parent {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .test1,
+    .test2 {
+      background-color: whitesmoke;
+      width: 40%;
+      max-width: 250px;
+      height: 12vh;
+      border-radius: 15px;
+      margin-top: 8.5rem;
+
+      box-shadow: 1px -1px 23px 5px rgba(0, 0, 0, 0.33);
+      -webkit-box-shadow: 1px -1px 23px 5px rgba(0, 0, 0, 0.33);
+      -moz-box-shadow: 1px -1px 23px 5px rgba(0, 0, 0, 0.33);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-[#169CF1] ">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+      <button data-collapse-toggle="mobile-menu-2" type="button"
+        class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="mobile-menu-2" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+
+      <a href="#" class="flex items-start">
+        <img src="./images/logo.png" class="mr-3  h-9 sm:h-9">
+        <span class="self-center text-md font-semibold whitespace-nowrap dark:text-white">MobileUX</span>
+      </a>
+
+
+      <div class="flex items-center md:order-2">
+        <button type="button"
+          class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+          id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+          <span class="sr-only">Open user menu</span>
+          <img class="w-8 h-8 rounded-full" src="./images/avatar.png" alt="user photo">
+        </button>
+
+      </div>
+      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <a href="#"
+              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:font-bold md:p-0 dark:text-white"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Announcement Component Start -->
+  <div class="hero-section">
+    <div class="parent">
+      <div class="test1">
+        <h4 class="font-bold text-center text-sm mt-4">Sitewide Discount</h4>
+        <p class="text-center text-sm">Flat *10% On all products</p>
+      </div>
+      <div class="test2">
+        <h4 class="font-bold text-center text-sm mt-4">Free Delivery</h4>
+        <p class="text-center text-sm mx-4">On order above 200 & above</p>
+      </div>
+    </div>
+  </div>
+  <!-- Announcement Component End -->
+
+
+  <!-- Item Component Start -->
+  <hr>
+  <article class="flex mt-[4rem]">
+    <div>
+      <img class="h-[4rem] w-[4rem] object-cover m-4  rounded-md" src="./images/dish1.jpg" alt="">
+    </div>
+    <div class="flex flex-col justify-center">
+      <p class="text-[0.8rem]">Indian</p>
+      <h3 class="font-bold">Indian Pasta</h3>
+      <p class="text-[0.8rem]">₹79</p>
+
+    </div>
+    <div class="flex flex-col justify-center mx-8">
+      <img class="h-[1rem] w-[1rem] object-fit " src="./images/heartFilled.png" alt="Heart">
+    </div>
+  </article>
+  <hr>
+  <!-- Item Component End -->
+
+
+  <!-- Item Component Start -->
+  <hr>
+  <article class="flex">
+    <div>
+      <img class="h-[4rem] w-[4rem] object-cover m-4  rounded-md" src="./images/dish2.jpg" alt="">
+    </div>
+    <div class="flex flex-col justify-center">
+      <p class="text-[0.8rem]">Indian</p>
+      <h3 class="font-bold">veg Rice Bowl</h3>
+      <p class="text-[0.8rem]">₹125</p>
+
+    </div>
+    <div class="flex flex-col justify-center mx-8">
+      <img class="h-[1rem] w-[1rem] object-fit " src="./images/heartFilled.png" alt="Heart">
+    </div>
+  </article>
+  <hr>
+  <!-- Item Component End -->
+
+
+  <!-- Item Component Start -->
+  <hr>
+  <article class="flex">
+    <div>
+      <img class="h-[4rem] w-[4rem] object-cover m-4  rounded-md" src="./images/dish3.jpg" alt="">
+    </div>
+    <div class="flex flex-col justify-center">
+      <p class="text-[0.8rem]">Indian</p>
+      <h3 class="font-bold">Chicken Wings</h3>
+      <p class="text-[0.8rem]">₹329</p>
+
+    </div>
+    <div class="flex flex-col justify-center mx-8">
+      <img class="h-[1rem] w-[1rem] object-fit " src="./images/heartHollow.png" alt="Heart">
+    </div>
+  </article>
+  <hr>
+  <!-- Item Component End -->
+
+
+  <!-- Item Component Start -->
+  <hr>
+  <article class="flex">
+    <div>
+      <img class="h-[4rem] w-[4rem] object-cover m-4  rounded-md" src="./images/dish4.jpg" alt="">
+    </div>
+    <div class="flex flex-col justify-center">
+      <p class="text-[0.8rem]">Mexican</p>
+      <h3 class="font-bold">Margarita Pizza</h3>
+      <p class="text-[0.8rem]">₹315</p>
+
+    </div>
+    <div class="flex flex-col justify-center mx-8">
+      <img class="h-[1rem] w-[1rem] object-fit " src="./images/heartFilled.png" alt="Heart">
+    </div>
+  </article>
+  <hr>
+  <!-- Item Component End -->
+
+
+  <!-- Item Component Start -->
+  <hr>
+  <article class="flex md:mb-[6rem]">
+    <div>
+      <img class="h-[4rem] w-[4rem] object-cover m-4  rounded-md" src="./images/dish5.webp" alt="">
+    </div>
+    <div class="flex flex-col justify-center">
+      <p class="text-[0.8rem]">Indian</p>
+      <h3 class="font-bold">Burger</h3>
+      <p class="text-[0.8rem]">₹89</p>
+
+    </div>
+    <div class="flex flex-col justify-center mx-8">
+      <img class="h-[1rem] w-[1rem] object-fit " src="./images/heartHollow.png" alt="Heart">
+    </div>
+  </article>
+  <hr>
+  <!-- Item Component End -->
+
+
+  <!-- Footer Section Start -->
+  <footer class="flex justify-around test bg-white ">
+    <div>
+      <img class="h-[1.5rem] w-[1.5rem] object-cover m-4" src="./images/search.svg" alt="">
+      <p class="mb-4">Search</p>
+    </div>
+    <div>
+      <img class="h-[1.5rem] w-[1.5rem] object-cover m-4" src="./images/heart.svg" alt="">
+      <p class="mb-4">Liked</p>
+    </div>
+    <div>
+      <img class="h-[1.5rem] w-[1.5rem] object-cover m-4" src="./images/cart.svg" alt="">
+      <p class="mb-4">Cart</p>
+    </div>
+    <div>
+      <img class="h-[1.5rem] w-[1.5rem] object-cover m-4" src="./images/user.svg" alt="">
+      <p class="mb-4">Profile</p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  <!--Created with Hard Work By Manish Das -->
+</body>
+</html

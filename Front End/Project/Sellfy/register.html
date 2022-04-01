@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Sellfy - Signup</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!--Header Start-->
+    <header class="navbar">
+      <img class="logo" src="./images/logo.png" alt="Sellify-Logo">
+        <button class="button login"> <a href="./login.html">Login</a> </button>
+    </header>
+    <!--Header End-->
+
+    <!--Main Start-->
+    <main>
+        <div id="register-error-msg-holder">
+            <p id="login-error-msg">Password <span id="error-msg-second-line">dosent match</span></p>
+          </div>
+
+        <h1>New User?</h1>
+        <input type="text" placeholder="Full Name" required>
+        <input type="number" placeholder="Mobile Number" required>
+        <input type="email" placeholder="Enter Email ID" name="email" id="email-field" class="register-form-field" required>
+        <input type="password" placeholder="Password" name="password" id="password-field" class="register-form-field" required>
+        <input type="password" placeholder="Confirm Password" name="cpassword" id="c-password-field" class="register-form-field" required>
+        <input type="submit" value="Register" class="btn" onClick="register()" />
+    </main>
+    <!--Main End-->
+
+    <!--Footer Start-->
+    <footer>
+        <h5>Copyright @ 2022 Sellfy All rights reserved</h5>
+    </footer>
+    <!--Footer End-->
+    <script defer src="login.js"></script>
+</body>
+</html>

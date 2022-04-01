@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Sellfy - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!--Header Start-->
+    <header class="navbar">
+       <img class="logo" src="./images/logo.png" alt="Sellify-Logo">
+        <button class="button"> <a href="./register.html">Register</a> </button>
+    </header>
+    <!--Header End-->
+
+    <!--Main Start-->
+    <main>
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+          </div>
+          <br>
+
+        <h1>Existing User?</h1>
+        <input type="email" placeholder="Enter Email ID" name="email" id="email" class="login-form-field" required>
+        <input type="password" placeholder="Password" name="password" id="password" class="login-form-field" required>
+        <input type="submit" value="Login" class="btn" onClick="login()" />
+
+        <a class="link" href="#">Forgot password?</a>
+    </main>
+    <!--Main End-->
+
+    <!--Footer Start-->
+    <footer>
+        <h5>Copyright @ 2022 Sellfy All rights reserved</h5>
+    </footer>
+    <!--Footer End-->
+    <script defer src="login.js"></script>
+</body>
+</html>

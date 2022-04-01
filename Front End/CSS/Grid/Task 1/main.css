@@ -1,0 +1,78 @@
+body 
+{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    height: 95vh;
+    border: 2px solid grey;
+    display: grid;
+    padding: 3px;
+    grid-gap: 3px;
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+
+}
+
+header
+{
+ background-color: rgb(42, 130, 238);
+ grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 1;
+grid-row-end: 1;
+}
+
+footer
+{
+    background-color: rgb(42, 130, 238);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+main
+{
+    background-color: greenyellow;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+aside
+{
+    background-color: blueviolet;
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.twin1, .twin2
+{
+    background-color: orange;
+    text-align: center;
+}
+
+.twin1
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.twin2
+{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+
