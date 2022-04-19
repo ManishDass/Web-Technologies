@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+        }
+
+        body {
+            background-color: #2c3e50;
+        }
+
+        main
+        {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #first
+        {
+          background-color: #f1c40f;
+          border-radius: 20px;
+          margin: 20px;
+          padding: 20px;
+          min-width: 250px;
+          max-width: 300px;
+        }
+
+        #number1, #number2, p
+        {
+            color: white;
+            font-weight: 700;
+            margin-left: 2.2rem;
+
+        }
+
+        #number1
+        {
+            margin-left: 2.8rem;
+        }
+
+        .vertical
+        {
+            margin-top: -2rem;
+        }
+        
+
+        /* Button */
+        .btn {
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #e74c3c;
+            border-radius: 0.6em;
+            color: #e74c3c;
+            cursor: pointer;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            /* margin-left: 1.3rem; */
+        }
+
+        .btn:hover,
+        .btn:focus {
+            color: #fff;
+            outline: 0;
+        }
+
+        .fourth {
+            border-color: #f1c40f;
+            color: #fff;
+            background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+            background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+            background-position: 100%;
+            background-size: 400%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+        }
+
+        .fourth:hover {
+            background-position: 0;
+        }

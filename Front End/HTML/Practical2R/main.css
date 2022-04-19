@@ -1,0 +1,160 @@
+body {
+    background-image:
+        linear-gradient(hsla(215, 89%, 56%, 0.9), hsla(215, 89%, 56%, 0.9)),
+        url(./images/bg.jpg);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.logo2 {
+    width: 30rem;
+}
+
+.android-logo,
+.ios-logo {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.logos-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.logos {
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.bottom-logos {
+    height: 10vh;
+    margin-left: 2rem;
+}
+
+.mockups {
+    width: 60%;
+    display: flex;
+}
+
+
+p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 1rem;
+}
+
+.bottom-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockup1,
+.mockup2,
+.mockup3 {
+    width: 24rem;
+}
+
+.mockup1 {
+    transform: translateY(-450px);
+}
+
+.mockup2 {
+    transform: translateY(-420px);
+}
+
+.mockup3 {
+    transform: translateY(150px);
+}
+
+@media screen and (max-width:1400px){
+
+    body {
+    background-image:
+        linear-gradient(hsla(215, 89%, 56%, 0.9), hsla(215, 89%, 56%, 0.9)),
+        url(./images/bg.jpg);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.logo2 {
+    width: 45rem;
+}
+
+.android-logo,
+.ios-logo {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.logos-group {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.logos {
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: -10rem;
+}
+
+.bottom-logos {
+    position: absolute;
+    height: 10vh;
+    margin-left: 6rem;
+    margin-right: 0rem;
+    top: 2200px;
+    width: 100vw;
+
+}
+
+
+.mockups {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18rem;
+    width: 100vw;
+}
+
+
+p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 1rem;
+}
+
+.mockup1 {
+    transform: translateY(-450px);
+}
+
+.mockup2 {
+    transform: translateY(-420px);
+}
+
+.mockup3 {
+    transform: translateY(-200px);
+}
+}
